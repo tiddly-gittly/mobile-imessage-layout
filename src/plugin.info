@@ -1,7 +1,7 @@
 {
-  "title": "$:/plugins/linonetwo/tw-example-plugin",
+  "title": "$:/plugins/linonetwo/mobile-imessage-layout",
   "author": "LinOnetwo",
-  "description": "put your description here, and fill in the author and title above",
+  "description": "Simple chat style (or Twitter style) layout for mobile. Quickly input todo and thoughts in few seconds.",
   "core-version": ">=5.1.22",
   "plugin-type": "plugin",
   "version": "0.0.1",

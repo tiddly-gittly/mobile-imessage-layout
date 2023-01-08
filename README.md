@@ -1,6 +1,8 @@
 # Wikitext plugin template for TiddlyWiki5
 
-This template will help you automatically package zipped multiple-file plugin for nodejs wiki, and single file JSON plugin for HTML wiki.
+Simple chat style (or Twitter style) layout for mobile. Quickly input todo and thoughts in few seconds.
+
+[Forum thread - Design a Layout for Mobile](https://talk.tiddlywiki.org/t/design-a-layout-for-mobile/5781)
 
 ## What need to change after apply the template
 
