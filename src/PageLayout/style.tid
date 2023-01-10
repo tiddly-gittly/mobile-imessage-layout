@@ -17,3 +17,14 @@ type: text/vnd.tiddlywiki
   display: flex;
   flex-direction: column;
 }
+
+.mobile-imessage-layout-config-before-use {
+  padding: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-imessage-layout-config-before-use .tc-edit-add-tag {
+  margin: 20px 0;
+}

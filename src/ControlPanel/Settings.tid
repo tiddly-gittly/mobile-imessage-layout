@@ -8,9 +8,7 @@ These settings let you customise the behaviour of mobile iMessageLayout plugin.
 
 !! Data
 
-<$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate">
-  <$macrocall $name="tag-picker" tagField="text"/>
-</$let>
+{{$:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsOnCreate}}
 
 !! Appearance
 
