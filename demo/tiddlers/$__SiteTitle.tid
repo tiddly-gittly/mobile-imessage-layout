@@ -1,4 +1,4 @@
-title: $:/SiteTitle
+title: $:/layout
 type: text/vnd.tiddlywiki
 
-Demo
+$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout

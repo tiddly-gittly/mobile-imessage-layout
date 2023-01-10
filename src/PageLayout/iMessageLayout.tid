@@ -5,7 +5,7 @@ tags: $:/tags/Layout
 
 \whitespace trim
 \define containerClasses()
-tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$ tw-whiteboard-layout-container
+tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$ mobile-imessage-layout-container
 \end
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
 
@@ -21,9 +21,11 @@ tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$ 
 
 <$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
 
-<main class="mobile-imessage-layout-main-area">
+<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
 
-</main>
+<$transclude tiddler=<<listItem>>/>
+
+</$list>
 
 </$navigator>
 

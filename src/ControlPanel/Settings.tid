@@ -1,0 +1,20 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/Settings
+caption: iMessageLayout
+tags: $:/tags/ControlPanel/SettingsTab
+
+These settings let you customise the behaviour of mobile iMessageLayout plugin.
+
+---
+
+!! Data
+
+<$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate">
+  <$macrocall $name="tag-picker" tagField="text"/>
+</$let>
+
+!! Appearance
+
+;Show page control buttons below page on imessage layout:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/PageControlBelowPage" field="text" checked="yes" unchecked="no"> Adding page control to bottom will be convenient shortcut back to default layout.</$checkbox>
+;Enable WYSIWYG editor if slate-write plugin is installed:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> Use WYSIWYG editor in the input box.</$checkbox>

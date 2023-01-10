@@ -1,0 +1,18 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory
+
+<!-- from core/ui/PageTemplate/story.tid -->
+<$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/UI/PageControlBelowPage]]">
+
+<$transclude/>
+
+</$list>
+
+<main class="mobile-imessage-layout-main-area">
+{{$:/plugins/linonetwo/mobile-imessage-layout/UI/ChatArea}}
+</main>
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/BelowStory]!has[draft.of]]">
+
+<$transclude/>
+
+</$list>
