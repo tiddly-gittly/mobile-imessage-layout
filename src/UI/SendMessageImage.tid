@@ -1,0 +1,4 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage
+tags: $:/tags/Image
+
+<svg width="22pt" height="22pt" class="tc-image-ipk-send-one-fill tc-image-button" viewBox="0 0 48 48" fill="none"><path d="M48 0H0V48H48V0Z" fill="white" fill-opacity="0.01"/><path d="M42 6L4 20.1383L24 24.0083L29.0052 44L42 6Z" stroke="black" stroke-width="4" stroke-linejoin="round"/><path d="M24.0083 24.0083L29.6651 18.3515" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>

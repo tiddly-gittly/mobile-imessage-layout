@@ -14,6 +14,26 @@ type: text/vnd.tiddlywiki
   border-radius: 5px;
   border: 1px solid <<colour modal-border>>
 }
+.mobile-imessage-layout-input-area .tc-edit-texteditor.tc-edit-texteditor-body {
+  width: 100%;
+}
+
+/** Button to create tiddler */
+
+.mobile-imessage-layout-button-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 3rem;
+  margin: 10px;
+}
+
+.mobile-imessage-layout-create-button {
+  height: 100%;
+  width: 10rem;
+}
 
 /** iMessage styles
  * copy from https://codepen.io/AllThingsSmitty/pen/jommGQ

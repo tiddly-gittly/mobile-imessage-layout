@@ -3,7 +3,11 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/InputAr
 <div class="mobile-imessage-layout-input-area">
   <$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG]get[text]else[no]match[yes]]">
     <$let currentTiddler="$:/state/mobile-imessage-layout/new">
-      <$edit-slateWrite />
+      <$edit-slateWrite
+        tabindex=-1
+        focus=yes
+        tiddler="$:/state/mobile-imessage-layout/new"
+      />
     </$let>
   </$list>
   <$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG]get[text]else[no]match[no]]">
@@ -11,13 +15,13 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/InputAr
       tiddler="$:/state/mobile-imessage-layout/new"
       field="text"
       class="tc-edit-texteditor tc-edit-texteditor-body"
-      default=""
       placeholder={{$:/language/EditTemplate/Body/Placeholder}}
       tabindex=-1
-      focus=false
+      focus=yes
       cancelPopups="yes"
       fileDrop=no
       minHeight="30px"
+      minWidth="100%"
     />
   </$list>
 </div>

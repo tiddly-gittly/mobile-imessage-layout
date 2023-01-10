@@ -9,6 +9,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory
 
 <main class="mobile-imessage-layout-main-area">
 {{$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatArea}}
+{{$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonArea}}
 {{$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/InputArea}}
 </main>
 
