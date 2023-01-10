@@ -1,0 +1,19 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/style.css
+tags: $:/tags/Stylesheet
+type: text/vnd.tiddlywiki
+
+.mobile-imessage-layout-container {
+  height: 100vh;
+}
+.mobile-imessage-layout-container > p {
+  margin: 0;
+}
+
+.mobile-imessage-layout-main-area {
+  /** minus the mobile-imessage-layout-page-control-below-page height */
+  height: calc(100vh - 45px);
+  /** move input to bottom, and let chat near it */
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}

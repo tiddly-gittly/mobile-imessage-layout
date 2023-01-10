@@ -1,4 +1,4 @@
-title: $:/plugins/linonetwo/mobile-imessage-layout/UI/ChatArea
+title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatArea
 
 <div class="mobile-imessage-layout-imessage">
   <p class="mobile-imessage-layout-from-them">It was loud. We just laid there and said &ldquo;is this an earthquake? I think this is an earthquake.&rdquo;</p>

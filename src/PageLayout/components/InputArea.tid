@@ -1,0 +1,23 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/InputArea
+
+<div class="mobile-imessage-layout-input-area">
+  <$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG]get[text]else[no]match[yes]]">
+    <$let currentTiddler="$:/state/mobile-imessage-layout/new">
+      <$edit-slateWrite />
+    </$let>
+  </$list>
+  <$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG]get[text]else[no]match[no]]">
+    <$edit
+      tiddler="$:/state/mobile-imessage-layout/new"
+      field="text"
+      class="tc-edit-texteditor tc-edit-texteditor-body"
+      default=""
+      placeholder={{$:/language/EditTemplate/Body/Placeholder}}
+      tabindex=-1
+      focus=false
+      cancelPopups="yes"
+      fileDrop=no
+      minHeight="30px"
+    />
+  </$list>
+</div>
