@@ -3,7 +3,8 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/language/zh-Hans/
 Name: i信息
 Description: 适配移动端的聊天风格快速输入信息的界面
 ConfigDescription: 通过这些设置，您可以自定义「i信息」插件的行为。
-ConfigDescription.SetTagsForMessage: 你需要设置一个标签，例如「想法」，才能开始使用此布局。「i信息」插件将只显示带此标签的条目，并在保存你输入的信息时，为条目自动加上此标签。
+ConfigDescription.SetTagsForMessage: 你需要设置一个标签，例如「想法」，才能开始使用此布局。
+ConfigDescription.SetTagsForMessage.Description: 「i信息」插件将只显示带此标签的条目，并在保存你输入的信息时，为条目自动加上此标签。
 ConfigDescription.PageControlBelowPage: 在「i信息」布局的页面下方显示页面控制按钮
 ConfigDescription.PageControlBelowPage.Description: 在底部添加页面控制按钮将是返回默认布局的快捷方式。
 ConfigDescription.EnableWYSIWYG: 如果安装了 slate-write 插件，则启用所见即所得编辑器。

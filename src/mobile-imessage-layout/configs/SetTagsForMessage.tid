@@ -1,7 +1,11 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage
 
+\define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+
 <<translate "ConfigDescription.SetTagsForMessage">>
 
 <$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage">
   <$macrocall $name="tag-picker" tagField="text"/>
 </$let>
+
+<<translate "ConfigDescription.SetTagsForMessage.Description">>
