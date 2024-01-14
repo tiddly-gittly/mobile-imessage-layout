@@ -10,17 +10,14 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonA
 
 <div class="mobile-imessage-layout-button-area">
   <$button class="mobile-imessage-layout-create-button">
+    <!-- Use random title, and first line or first sentence as caption. -->
     <$action-createtiddler
-      $basetitle=<<now "[UTC]YY-0MM-0DD0hh0mm0ssXXX">>
+      $basetitle=<<now "ime\s\sage-YYYY-0MM-0DD0hh0mm0ssXXX">>
       $template="$:/state/mobile-imessage-layout/new"
       tags={{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage}}
-      caption={{$:/state/Calendar/PageLayout/create-tiddler-caption!!draft.title}}
+      caption={{{ [{$:/state/mobile-imessage-layout/new}splitregexp[\.|。|\n]first[]] }}}
       type="text/vnd.tiddlywiki"
     >
-      <$let currentTiddler=<<createTiddler-title>> >
-        <$action-sendmessage $message="tm-save-tiddler" $param=<<currentTiddler>> />
-        <$action-sendmessage $message="tm-auto-save-wiki" />
-      </$let>
       <<cleanUpAction>>
     </$action-createtiddler>
     {{$:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage}}
