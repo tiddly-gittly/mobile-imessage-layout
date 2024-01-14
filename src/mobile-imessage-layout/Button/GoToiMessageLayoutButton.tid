@@ -7,7 +7,8 @@ description: <<translate "GoToiMessageLayoutButton/Description" "$:/plugins/lino
 \whitespace trim
 <$wikify name="tooltip" text="""<<translate "GoToiMessageLayoutButton/Description" mode:"inline">>""">
   <$button tooltip=<<tooltip>> aria-label=<<translate "Name" mode:"inline">> class=<<tv-config-toolbar-class>>>
-    <$action-setfield $tiddler="$:/layout" text="$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout"/>
+    <!-- toggle the imessage layout, if is already in imessage layout, go back to default layout. -->
+    <$action-setfield $tiddler="$:/layout" text={{{ [{$:/layout}match[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout]then[]else[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout]] }}}/>
     <$action-setfield $tiddler="$:/state/sidebar" text="no"/>
 
     <$list filter="[<tv-config-toolbar-icons>match[yes]]">
