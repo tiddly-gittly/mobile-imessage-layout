@@ -1,11 +1,37 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+\define single-text-tag-editor()
+\whitespace trim
+<!-- copy and modify from $:/plugins/linonetwo/intention-tower-knowledge-graph/Settings/Tags -->
+<div class="itkg-setting-tags-item">
+  <$let
+    currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage"
+    palette={{$:/palette}}
+    tempTitle="$:/state/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage"
+    tabIndex={{$:/config/EditTabIndex}}
+    cancelPopups="yes"
+  >
+    <$macrocall $name="tag" tag={{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}} />
+
+    <$edit-text tiddler=<<tempTitle>> tag="input" field="text" placeholder={{$:/language/EditTemplate/Tags/Add/Placeholder}} />
+
+    <$button>
+      <$action-setfield tiddler=<<currentTiddler>> text={{{ [<tempTitle>get[text]] }}}>
+        <$action-setfield tiddler=<<tempTitle>> text="" />
+      </$action-setfield>
+
+      {{$:/language/EditTemplate/Tags/Add/Button}}
+    </$button>
+    
+  </$let> 
+</div>
+\end
 
 <<translate "ConfigDescription.SetTagsForMessage">>
 
 <$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage">
-  <$macrocall $name="tag-picker" tagField="text"/>
+  <<single-text-tag-editor>>
 </$let>
 
 <<translate "ConfigDescription.SetTagsForMessage.Description">>
