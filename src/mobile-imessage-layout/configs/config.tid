@@ -2,19 +2,21 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/config
 tags: $:/tags/ControlPanel/SettingsTab
 caption: Plugin Setting
 
-These settings let you customise the behaviour of mobile-imessage-layout plugin.
+\define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+
+<<translate "ConfigDescription">>
 
 ---
 
 !! Data
 
-You Need to Fill this to use the view. Add a tag, for example, "Chat".
-
 {{$:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage}}
 
 !! Appearance
 
-;Show page control buttons below page on imessage layout:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/PageControlBelowPage" field="text" checked="yes" unchecked="no"> Adding page control to bottom will be convenient shortcut back to default layout.</$checkbox>
-;Enable WYSIWYG editor if slate-write plugin is installed:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> Use WYSIWYG editor in the input box.</$checkbox>
+;<<translate "ConfigDescription.PageControlBelowPage">>:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.PageControlBelowPage.Description">></$checkbox>
+;<<translate "ConfigDescription.EnableWYSIWYG">>:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableWYSIWYG.Description">></$checkbox>
+;<<translate "ConfigDescription.EnableCodeMirror">>:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableCodeMirror" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableCodeMirror.Description">></$checkbox>

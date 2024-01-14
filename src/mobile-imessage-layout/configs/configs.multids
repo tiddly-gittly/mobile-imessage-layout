@@ -1,5 +1,6 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/configs/
 
 EnableWYSIWYG: no
+EnableCodeMirror: yes
 PageControlBelowPage: yes
 TagsForMessage: 

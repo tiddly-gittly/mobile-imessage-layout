@@ -1,4 +1,4 @@
 title: $:/SiteSubtitle
 type: text/vnd.tiddlywiki
 
-<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang"><$list filter="[<lang>search[zh]]">适配移动端快速输入信息的界面</$list><$list filter="[<lang>!search[zh]]">Simple chat style (or Twitter style) layout for mobile.</$list></$list>
+<<translate "Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
