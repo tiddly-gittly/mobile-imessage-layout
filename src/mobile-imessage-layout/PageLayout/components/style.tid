@@ -51,19 +51,29 @@ type: text/vnd.tiddlywiki
   overflow-y: auto;
 
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: flex-end;
   margin: 0 auto 1rem;
   padding: 0.5rem 1.5rem;
 }
 .mobile-imessage-layout-imessage-length-limit-description {
   opacity: 0.5;
+  height: 1em;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+.mobile-imessage-layout-imessage p:nth-child(2) {
+  height: calc(100% - 3em);
+}
+.mobile-imessage-layout-imessage-chats {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 
-.mobile-imessage-layout-imessage p {
+}
+.mobile-imessage-layout-imessage-chats p {
   border-radius: 1.15rem;
   line-height: 1.25;
   padding: 0.5rem .875rem;
@@ -73,8 +83,8 @@ type: text/vnd.tiddlywiki
   margin-top: 2rem;
 }
 
-.mobile-imessage-layout-imessage p::before,
-.mobile-imessage-layout-imessage p::after {
+.mobile-imessage-layout-imessage-chats p::before,
+.mobile-imessage-layout-imessage-chats p::after {
   bottom: -0.1rem;
   content: "";
   height: 1rem;
@@ -166,13 +176,13 @@ p[class^="mobile-imessage-layout-from-"].emoji::before {
 }
 
 @media screen and (max-width: <<sidebarbreakpoint>>) {
-  .mobile-imessage-layout-imessage {
+  .mobile-imessage-layout-imessage-chats {
     font-size: 1.05rem;
     margin: 0 auto 1rem;
     padding: 0.25rem 0.875rem;
   }
 
-  .mobile-imessage-layout-imessage p {
+  .mobile-imessage-layout-imessage-chats p {
     margin: 0.5rem 0;
   }
 }
