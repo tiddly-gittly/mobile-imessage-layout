@@ -95,7 +95,7 @@ p.mobile-imessage-layout-from-me::before {
 }
 
 p.mobile-imessage-layout-from-me::after {
-  background-color: #fff;
+  background-color: <<colour page-background>>;
   border-bottom-left-radius: 0.5rem;
   right: -40px;
   transform:translate(-30px, -2px);
@@ -133,7 +133,7 @@ p.mobile-imessage-layout-from-them:before {
 }
 
 p.mobile-imessage-layout-from-them::after {
-  background-color: #fff;
+  background-color: <<colour page-background>>;
   border-bottom-right-radius: 0.5rem;
   left: 20px;
   transform: translate(-30px, -2px);
