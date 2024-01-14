@@ -1,7 +1,8 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatArea
 
 <div class="mobile-imessage-layout-imessage">
-  <$list filter="[tag{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage}]">
+  <!-- only show recent 10 messages for performance -->
+  <$list filter="[all[tiddler]tag{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage}has[modified]!sort[modified]limit[10]]">
     <p class="mobile-imessage-layout-from-them emoji">👍🏻</p>
     <p class="mobile-imessage-layout-from-me">{{!!text}}</p>
   </$list>
