@@ -1,0 +1,18 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/language/en-GB/Readme
+
+\define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+
+! "<<translate "Name" mode:"inline">>" mobile layout for TiddlyWiki5
+
+<<translate "Description" mode:"inline">>
+Quickly input todo and thoughts in few seconds.
+
+[[Forum thread - Design a Layout for Mobile|https://talk.tiddlywiki.org/t/design-a-layout-for-mobile/5781]]
+
+!! Usage
+
+# Open the layout
+#* Use the layout switcher button {{$:/core/ui/Buttons/layout}} on the PageControl to switch the layout
+#* Use the shortcut button {{$:/plugins/linonetwo/mobile-image-layout/tiddlywiki-ui/GoToiMessageImageLayoutButton}} on the PageControl to switch to the layout provided by the plugin.
+# Fill in the required information, e.g. the default tag (this is only required for the first time)
+# Type any short messages in the text box at the bottom, hit enter, or click the submit button {{$:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage}} to save it.

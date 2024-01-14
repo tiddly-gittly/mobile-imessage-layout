@@ -2,8 +2,6 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/readme
 creator: LinOnetwo
 type: text/vnd.tiddlywiki
 
-! iMessage mobile layout for TiddlyWiki5
+\define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 
-Simple chat style (or Twitter style) layout for mobile. Quickly input todo and thoughts in few seconds.
-
-[Forum thread - Design a Layout for Mobile](https://talk.tiddlywiki.org/t/design-a-layout-for-mobile/5781)
+<<translate "Readme">>
