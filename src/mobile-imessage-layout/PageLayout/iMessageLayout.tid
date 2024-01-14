@@ -1,6 +1,6 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout
-name: iMessage
-description: Chat style message list and todo/thoughts input for mobile.
+name: {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}}<<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
+description: <<translate "Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
 tags: $:/tags/Layout
 
 \whitespace trim

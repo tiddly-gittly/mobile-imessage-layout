@@ -1,7 +1,7 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/language/zh-Hans/
 
 Name: i信息
-Description: 适配移动端的聊天风格快速输入信息的界面
+Description: 适配移动端的快速输入信息的聊天风格界面
 ConfigDescription: 通过这些设置，您可以自定义「i信息」插件的行为。
 ConfigDescription.SetTagsForMessage: 你需要设置一个标签，例如「想法」，才能开始使用此布局。
 ConfigDescription.SetTagsForMessage.Description: 「i信息」插件将只显示带此标签的条目，并在保存你输入的信息时，为条目自动加上此标签。
@@ -11,3 +11,5 @@ ConfigDescription.EnableWYSIWYG: 如果安装了 slate-write 插件，则启用�
 ConfigDescription.EnableWYSIWYG.Description: 在输入框中使用所见即所得编辑器。这将禁用 codemirror 编辑器。
 ConfigDescription.EnableCodeMirror: 如果安装了 codemirror 插件，则启用 codemirror 编辑器。
 ConfigDescription.EnableCodeMirror.Description: 在输入框中使用 codemirror 编辑器。如果启用了所见即所得编辑器，则此设置将被忽略。
+GoToiMessageLayoutButton/Hint: 进入「i信息」布局
+GoToiMessageLayoutButton/Description: 点击此按钮将进入「i信息」布局

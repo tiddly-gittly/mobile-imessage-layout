@@ -1,4 +1,4 @@
 title: $:/SiteTitle
 type: text/vnd.tiddlywiki
 
-<<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
+<<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>

@@ -11,3 +11,5 @@ ConfigDescription.EnableWYSIWYG: Enable WYSIWYG editor if slate-write plugin is 
 ConfigDescription.EnableWYSIWYG.Description: Use WYSIWYG editor in the input box. This will override codemirror editor.
 ConfigDescription.EnableCodeMirror: Enable codemirror editor if codemirror plugin is installed
 ConfigDescription.EnableCodeMirror.Description: Use codemirror editor in the input box. This won't work if WYSIWYG editor is enabled.
+GoToiMessageLayoutButton/Hint: Go to iMessage Layout
+GoToiMessageLayoutButton/Description: Click on this button will go to iMessage Layout
