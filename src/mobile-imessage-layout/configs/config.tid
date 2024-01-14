@@ -15,8 +15,8 @@ caption: Plugin Setting
 !! Appearance
 
 ;<<translate "ConfigDescription.PageControlBelowPage" mode:"inline">>:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.PageControlBelowPage.Description" mode:"inline">></$checkbox>
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.PageControlBelowPage.Description" mode:"inline">></$checkbox>
 ;<<translate "ConfigDescription.EnableWYSIWYG" mode:"inline">>:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableWYSIWYG.Description" mode:"inline">></$checkbox>
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableWYSIWYG.Description" mode:"inline">></$checkbox>
 ;<<translate "ConfigDescription.EnableCodeMirror" mode:"inline">>:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableCodeMirror" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableCodeMirror.Description" mode:"inline">></$checkbox>
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableCodeMirror" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableCodeMirror.Description" mode:"inline">></$checkbox>

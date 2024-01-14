@@ -3,7 +3,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessag
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 \define single-text-tag-editor()
 \whitespace trim
-<!-- copy and modify from $:/plugins/linonetwo/intention-tower-knowledge-graph/Settings/Tags -->
+<!-- copy and modify from $:/plugins/linonetwo/intention-tower-knowledge-graph/configs/Tags -->
 <div class="itkg-setting-tags-item">
   <$let
     currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage"

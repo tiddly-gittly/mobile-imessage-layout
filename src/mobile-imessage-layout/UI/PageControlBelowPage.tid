@@ -1,7 +1,7 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/UI/PageControlBelowPage
 
 <!-- Though visually it is on the bottom of the page, but we have to use AboveStory to make sure it is overlay on the story. -->
-<$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/settings/PageControlBelowPage]get[text]else[no]match[yes]]">
+<$list filter="[[$:/plugins/linonetwo/mobile-imessage-layout/configs/PageControlBelowPage]get[text]else[no]match[yes]]">
   <nav class="mobile-imessage-layout-page-control-below-page">
     {{$:/core/ui/PageTemplate/pagecontrols}}
   </nav>
