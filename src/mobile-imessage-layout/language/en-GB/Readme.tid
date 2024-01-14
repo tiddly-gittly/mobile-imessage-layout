@@ -15,4 +15,8 @@ Quickly input todo and thoughts in few seconds.
 #* Use the layout switcher button {{$:/core/ui/Buttons/layout}} on the PageControl to switch the layout
 #* Use the shortcut button {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImageLayoutButton}} on the PageControl to switch to the layout provided by the plugin.
 # Fill in the required information, e.g. the default tag (this is only required for the first time)
-# Type any short messages in the text box at the bottom, hit enter, or click the submit button {{$:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage}} to save it.
+# Type any short messages in the text box at the bottom, click the submit button {{$:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage}} to save it.
+#* The input box supports multi-line text, you can use carriage return to change lines directly (it won't submit, only clicking the submit button will submit it.)
+#* When using multi-line text, the first line will be used as the caption field of the tiddler (shown as title), and the full content will be used as the text field of the tiddler (shown as content).
+#* If the first line contains a period (`.`), the content before the period will be used as the caption field
+#* You can use TiddlyWiki syntax in textboxes, such as links, images, lists, etc.
