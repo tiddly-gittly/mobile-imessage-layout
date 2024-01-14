@@ -5,11 +5,14 @@ description: {{$:/language/Buttons/GoToiMessageLayoutButton/Description}}
 
 \whitespace trim
 <$button tooltip={{$:/language/Buttons/GoToiMessageLayoutButton/Hint}} aria-label={{$:/language/Buttons/GoToiMessageLayoutButton/Caption}} class=<<tv-config-toolbar-class>>>
-<$action-setfield $tiddler="$:/layout" text="$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout"/>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-{{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}}
-</$list>
-<$list filter="[<tv-config-toolbar-text>match[yes]]">
-<span class="tc-btn-text"><$text text={{$:/language/Buttons/GoToiMessageLayoutButton/Caption}}/></span>
-</$list>
+  <$action-setfield $tiddler="$:/layout" text="$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout"/>
+  <$action-setfield $tiddler="$:/state/sidebar" text="no"/>
+
+  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+    {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}}
+  </$list>
+  <$list filter="[<tv-config-toolbar-text>match[yes]]">
+    <span class="tc-btn-text"><$text text={{$:/language/Buttons/GoToiMessageLayoutButton/Caption}}/></span>
+  </$list>
+
 </$button>
