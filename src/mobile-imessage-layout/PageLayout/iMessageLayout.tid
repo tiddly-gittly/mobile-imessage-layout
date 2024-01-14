@@ -21,12 +21,12 @@ tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$ 
 
 <$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
 
-<$reveal type="match" state="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate" text="">
+<$reveal type="match" state="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage" text="">
 	<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageConfigBeforeUse]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
 		<$transclude tiddler=<<listItem>>/>
 	</$list>
 </$reveal>
-<$reveal type="nomatch" state="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate" text="">
+<$reveal type="nomatch" state="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage" text="">
 	<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
 		<$transclude tiddler=<<listItem>>/>
 	</$list>

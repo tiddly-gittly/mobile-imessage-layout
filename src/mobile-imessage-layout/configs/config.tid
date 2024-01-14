@@ -2,25 +2,19 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/config
 tags: $:/tags/ControlPanel/SettingsTab
 caption: Plugin Setting
 
-These settings let you customise the behaviour of your plugin.
+These settings let you customise the behaviour of mobile-imessage-layout plugin.
 
 ---
 
-!! Title
+!! Data
 
-Description
+You Need to Fill this to use the view. Add a tag, for example, "Chat".
 
-;Config name1
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/xxx" field="text" checked="yes" unchecked=""> Description</$checkbox>
-;Config name2
-:<$select tiddler='$:/plugins/linonetwo/mobile-imessage-layout/configs/yyy'>
-	<option value='0'>Sunday</option>
-	<option value='1'>Monday</option>
-	<option value='2'>Tuesday</option>
-	<option value='3'>Wednesday</option>
-	<option value='4'>Thursday</option>
-	<option value='5'>Friday</option>
-	<option value='6'>Saturday</option>
-</$select>
-;Config name3
-:<$edit-text tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/zzz" tabindex=-1 focus=false cancelPopups="yes" fileDrop=no tag="input" />
+{{$:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage}}
+
+!! Appearance
+
+;Show page control buttons below page on imessage layout:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/PageControlBelowPage" field="text" checked="yes" unchecked="no"> Adding page control to bottom will be convenient shortcut back to default layout.</$checkbox>
+;Enable WYSIWYG editor if slate-write plugin is installed:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> Use WYSIWYG editor in the input box.</$checkbox>

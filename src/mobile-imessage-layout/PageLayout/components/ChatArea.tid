@@ -1,7 +1,7 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatArea
 
 <div class="mobile-imessage-layout-imessage">
-  <$list filter="[tag{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate}]">
+  <$list filter="[tag{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage}]">
     <p class="mobile-imessage-layout-from-them emoji">👍🏻</p>
     <p class="mobile-imessage-layout-from-me">{{!!text}}</p>
   </$list>

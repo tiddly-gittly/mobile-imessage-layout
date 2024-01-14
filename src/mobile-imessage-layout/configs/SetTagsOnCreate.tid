@@ -1,8 +1,8 @@
-title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsOnCreate
+title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage
 
 You Need to Fill this to use the view. Add a tag, for example, "Chat".
 
-<$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate">
+<$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage">
   <$macrocall $name="tag-picker" tagField="text"/>
 </$let>
 

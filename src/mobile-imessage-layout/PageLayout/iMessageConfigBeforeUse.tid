@@ -8,7 +8,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageConfigBefo
 </$list>
 
 <main class="mobile-imessage-layout-config-before-use">
-  {{$:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsOnCreate}}
+  {{$:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage}}
 </main>
 
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/BelowStory]!has[draft.of]]">

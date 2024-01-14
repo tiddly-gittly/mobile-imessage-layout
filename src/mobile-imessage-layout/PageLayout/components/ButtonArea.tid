@@ -13,7 +13,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonA
     <$action-createtiddler
       $basetitle=<<now "[UTC]YY-0MM-0DD0hh0mm0ssXXX">>
       $template="$:/state/mobile-imessage-layout/new"
-      tags={{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsOnCreate}}
+      tags={{$:/plugins/linonetwo/mobile-imessage-layout/settings/TagsForMessage}}
       caption={{$:/state/Calendar/PageLayout/create-tiddler-caption!!draft.title}}
       type="text/vnd.tiddlywiki"
     >

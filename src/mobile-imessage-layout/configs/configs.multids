@@ -1,5 +1,5 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/configs/
 
-xxx: https://tidgi.fun/
-yyy: https://tidgi.fun/
-zzz: https://tidgi.fun/
+EnableWYSIWYG: no
+PageControlBelowPage: yes
+TagsForMessage: 
