@@ -1,6 +1,7 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+
 \define single-text-tag-editor()
 \whitespace trim
 <!-- copy and modify from $:/plugins/linonetwo/intention-tower-knowledge-graph/configs/Tags -->
@@ -12,7 +13,9 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessag
     tabIndex={{$:/config/EditTabIndex}}
     cancelPopups="yes"
   >
-    <$macrocall $name="tag" tag={{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}} />
+    <% if [{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}!match[]] %>
+      <$macrocall $name="tag" tag={{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}} />
+    <% endif %>
 
     <$edit-text tiddler=<<tempTitle>> tag="input" field="text" placeholder={{$:/language/EditTemplate/Tags/Add/Placeholder}} />
 
