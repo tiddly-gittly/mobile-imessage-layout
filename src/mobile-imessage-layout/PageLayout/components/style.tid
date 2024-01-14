@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
   padding: 10px;
   margin: 0 10px;
   border-radius: 5px;
-  border: 1px solid <<colour modal-border>>
+  border: 1px solid <<colour modal-border>>;
   max-height: 30vh;
   overflow: auto;
   min-height: 4em;
