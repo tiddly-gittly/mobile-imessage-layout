@@ -1,9 +1,16 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatArea
 
+\define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+
 <div class="mobile-imessage-layout-imessage">
+
   <!-- only show recent 10 messages for performance -->
   <$list filter="[all[tiddlers]tag{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}has[modified]!sort[modified]limit[10]]">
     <p class="mobile-imessage-layout-from-them emoji">👍🏻</p>
     <p class="mobile-imessage-layout-from-me">{{!!text}}</p>
   </$list>
+
+  <div class="mobile-imessage-layout-imessage-length-limit-description">
+    <<translate "ChatArea/ContentLengthDescription">>
+  </div>
 </div>

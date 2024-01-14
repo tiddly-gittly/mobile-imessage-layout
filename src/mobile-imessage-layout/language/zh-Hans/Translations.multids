@@ -13,3 +13,4 @@ ConfigDescription.EnableCodeMirror: 如果安装了 codemirror 插件，则启�
 ConfigDescription.EnableCodeMirror.Description: 在输入框中使用 codemirror 编辑器。如果启用了所见即所得编辑器，则此设置将被忽略。
 GoToiMessageLayoutButton/Hint: 进入「i信息」布局
 GoToiMessageLayoutButton/Description: 点击此按钮将进入「i信息」布局
+ChatArea/ContentLengthDescription: 仅展示最近的 10 条信息
