@@ -1,5 +1,6 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout
-name: {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}}<<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
+name: <<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
+icon: $:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage
 description: <<translate "Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
 tags: $:/tags/Layout
 
