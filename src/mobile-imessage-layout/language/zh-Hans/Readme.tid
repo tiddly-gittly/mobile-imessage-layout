@@ -2,9 +2,9 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/language/zh-Hans/Readme
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 
-! 太微5「<<lingo "Name">>」移动端布局
+! 太微5「<<lingo Name>>」移动端布局
 
-<<lingo "Description">>
+<<lingo Description>>
 在几秒内快速添加想法和待办。
 
 [[国际论坛上的讨论 - 设计适配移动端的布局|https://talk.tiddlywiki.org/t/design-a-layout-for-mobile/5781]]
