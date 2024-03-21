@@ -4,4 +4,4 @@ type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 
-<<translate "Readme">>
+<<lingo Readme>>

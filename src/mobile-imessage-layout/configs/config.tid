@@ -4,7 +4,7 @@ caption: Plugin Setting
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 
-<<translate "ConfigDescription">>
+<<lingo ConfigDescription>>
 
 ---
 
@@ -14,9 +14,9 @@ caption: Plugin Setting
 
 !! Appearance
 
-;<<translate "ConfigDescription.PageControlBelowPage" mode:"inline">>:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.PageControlBelowPage.Description" mode:"inline">></$checkbox>
-;<<translate "ConfigDescription.EnableWYSIWYG" mode:"inline">>:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableWYSIWYG.Description" mode:"inline">></$checkbox>
-;<<translate "ConfigDescription.EnableCodeMirror" mode:"inline">>:
-:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableCodeMirror" field="text" checked="yes" unchecked="no"> <<translate "ConfigDescription.EnableCodeMirror.Description" mode:"inline">></$checkbox>
+;<<lingo "ConfigDescription.PageControlBelowPage">>:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<lingo "ConfigDescription.PageControlBelowPage.Description">></$checkbox>
+;<<lingo "ConfigDescription.EnableWYSIWYG">>:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> <<lingo "ConfigDescription.EnableWYSIWYG.Description">></$checkbox>
+;<<lingo "ConfigDescription.EnableCodeMirror">>:
+:<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableCodeMirror" field="text" checked="yes" unchecked="no"> <<lingo "ConfigDescription.EnableCodeMirror.Description">></$checkbox>

@@ -6,7 +6,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatAre
 
   <!-- only show recent 10 messages for performance -->
   <div class="mobile-imessage-layout-imessage-length-limit-description">
-    <<translate "ChatArea/ContentLengthDescription">>
+    <<lingo "ChatArea/ContentLengthDescription">>
   </div>
 
   <div class="mobile-imessage-layout-imessage-chats">

@@ -1,12 +1,12 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImageLayoutButton
 tags: $:/tags/PageControls
-caption: {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}} <<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
-description: <<translate "GoToiMessageLayoutButton/Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
+caption: {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}} <<lingo "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
+description: <<lingo "GoToiMessageLayoutButton/Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 \whitespace trim
-<$wikify name="tooltip" text="""<<translate "GoToiMessageLayoutButton/Description" mode:"inline">>""">
-  <$button tooltip=<<tooltip>> aria-label=<<translate "Name" mode:"inline">> class=<<tv-config-toolbar-class>>>
+<$wikify name="tooltip" text="""<<lingo "GoToiMessageLayoutButton/Description">>""">
+  <$button tooltip=<<tooltip>> aria-label=<<lingo "Name">> class=<<tv-config-toolbar-class>>>
     <!-- toggle the imessage layout, if is already in imessage layout, go back to default layout. -->
     <$action-setfield $tiddler="$:/layout" text={{{ [{$:/layout}match[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout]then[]else[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout]] }}}/>
     <$action-setfield $tiddler="$:/state/sidebar" text="no"/>
@@ -15,7 +15,7 @@ description: <<translate "GoToiMessageLayoutButton/Description" "$:/plugins/lino
       {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}}
     </$list>
     <$list filter="[<tv-config-toolbar-text>match[yes]]">
-      <span class="tc-btn-text"><$text text=<<translate "Name" mode:"inline">>/></span>
+      <span class="tc-btn-text"><$text text=<<lingo "Name">>/></span>
     </$list>
 
   </$button>

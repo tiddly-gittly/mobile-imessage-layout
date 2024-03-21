@@ -1,7 +1,7 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageLayout
-name: <<translate "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
+name: <<lingo "Name" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
 icon: $:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage
-description: <<translate "Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/" mode:"inline">>
+description: <<lingo "Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
 tags: $:/tags/Layout
 
 \whitespace trim

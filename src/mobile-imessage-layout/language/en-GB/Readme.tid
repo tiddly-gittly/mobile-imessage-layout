@@ -2,9 +2,9 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/language/en-GB/Readme
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 
-! "<<translate "Name" mode:"inline">>" mobile layout for TiddlyWiki5
+! "<<lingo "Name">>" mobile layout for TiddlyWiki5
 
-<<translate "Description" mode:"inline">>
+<<lingo "Description">>
 Quickly input todo and thoughts in few seconds.
 
 [[Forum thread - Design a Layout for Mobile|https://talk.tiddlywiki.org/t/design-a-layout-for-mobile/5781]]

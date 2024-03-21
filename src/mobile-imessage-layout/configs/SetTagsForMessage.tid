@@ -31,10 +31,10 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessag
 </div>
 \end
 
-<<translate "ConfigDescription.SetTagsForMessage">>
+<<lingo "ConfigDescription.SetTagsForMessage">>
 
 <$let currentTiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage">
   <<single-text-tag-editor>>
 </$let>
 
-<<translate "ConfigDescription.SetTagsForMessage.Description">>
+<<lingo "ConfigDescription.SetTagsForMessage.Description">>
