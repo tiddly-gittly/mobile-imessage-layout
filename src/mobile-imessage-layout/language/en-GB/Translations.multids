@@ -3,6 +3,8 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/language/en-GB/
 Name: iMessage
 Description: Simple chat style (or Twitter style) layout for mobile.
 ConfigDescription: These settings let you customise the behaviour of mobile-imessage-layout plugin.
+ConfigDescription/Data: Data
+ConfigDescription/Appearance: Appearance
 ConfigDescription.SetTagsForMessage: You Need to Fill this to use the layout. Add a tag here, for example, "Chat".
 ConfigDescription.SetTagsForMessage.Description: This layout will show tiddlers with these tags. And tiddler created in this layout will add these tags.
 ConfigDescription.PageControlBelowPage: Show page control buttons below page on imessage layout

@@ -1,6 +1,6 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/config
 tags: $:/tags/ControlPanel/SettingsTab
-caption: Plugin Setting
+caption: <<lingo Name $:/plugins/linonetwo/mobile-imessage-layout/language/>>
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
 
@@ -8,11 +8,11 @@ caption: Plugin Setting
 
 ---
 
-!! Data
+!! <<lingo ConfigDescription/Data>>
 
 {{$:/plugins/linonetwo/mobile-imessage-layout/ControlPanel/SetTagsForMessage}}
 
-!! Appearance
+!! <<lingo ConfigDescription/Appearance>>
 
 ;<<lingo "ConfigDescription.PageControlBelowPage">>:
 :<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/PageControlBelowPage" field="text" checked="yes" unchecked="no"> <<lingo "ConfigDescription.PageControlBelowPage.Description">></$checkbox>
