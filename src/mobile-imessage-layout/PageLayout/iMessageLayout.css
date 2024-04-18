@@ -4,7 +4,7 @@
 .mobile-imessage-layout-input-area .tc-edit-texteditor.tc-edit-texteditor-body {
   width: 100%;
 }
-.mobile-imessage-layout-input-area .CodeMirror-activeline-background {
+.mobile-imessage-layout-input-area div.CodeMirror-activeline-background {
   background: transparent;
 }
 
