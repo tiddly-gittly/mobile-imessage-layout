@@ -10,6 +10,14 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonA
 
 <div class="mobile-imessage-layout-button-area">
   <$button class="mobile-imessage-layout-create-button">
+    <$action-setfield
+      $tiddler="$:/layout"
+      text=""
+    />
+    {{$:/core/images/default-layout}}
+  </$button>
+
+  <$button class="mobile-imessage-layout-create-button">
     <!-- Use random title, and first line or first sentence as caption. -->
     <$action-createtiddler
       $basetitle=<<now "ime\s\sage-YYYY-0MM-0DD0hh0mm0ssXXX">>

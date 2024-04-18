@@ -142,3 +142,9 @@ p[class^='mobile-imessage-layout-from-'].emoji::before {
 .mobile-imessage-layout-margin-t_one {
   margin-top: 1rem !important;
 }
+
+.mobile-imessage-layout-button-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
