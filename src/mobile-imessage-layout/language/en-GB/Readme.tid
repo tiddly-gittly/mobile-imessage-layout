@@ -13,7 +13,6 @@ Quickly input todo and thoughts in few seconds.
 
 # Open the layout
 #* Use the layout switcher button {{$:/core/ui/Buttons/layout}} on the PageControl to switch the layout
-#* Use the shortcut button {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImageLayoutButton}} on the PageControl to switch to the layout provided by the plugin.
 # Fill in the required information, e.g. the default tag (this is only required for the first time)
 # Type any short messages in the text box at the bottom, click the submit button {{$:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage}} to save it.
 #* The input box supports multi-line text, you can use carriage return to change lines directly (it won't submit, only clicking the submit button will submit it.)
@@ -22,4 +21,4 @@ Quickly input todo and thoughts in few seconds.
 #* You can use TiddlyWiki syntax in textboxes, such as links, images, lists, etc.
 # Close the layout and switch back to the default story flow layout
 #* Use the layout switcher button {{$:/core/ui/Buttons/layout}} on the PageControl to switch the layout
-#* Use the shortcut button {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImageLayoutButton}} on the PageControl again, click on it again can switch back and forth between the imessage layout and the The default layout.
+#* Use the button with default layout icon {{$:/core/images/default-layout}} , on the bottom left of the page (above input box), to go back to default layout.

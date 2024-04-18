@@ -1,5 +1,4 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImageLayoutButton
-tags: $:/tags/PageControls
 caption: {{$:/plugins/linonetwo/mobile-imessage-layout/tiddlywiki-ui/GoToiMessageImage}} <<lingo Name "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
 description: <<lingo "GoToiMessageLayoutButton/Description" "$:/plugins/linonetwo/mobile-imessage-layout/language/">>
 
