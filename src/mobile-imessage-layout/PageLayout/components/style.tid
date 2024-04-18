@@ -2,7 +2,13 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/style.c
 tags: $:/tags/Stylesheet
 type: text/vnd.tiddlywiki
 
-<$importvariables filter="[[$:/themes/tiddlywiki/vanilla/base]]">
+\import [[$:/themes/tiddlywiki/vanilla/base]]
+
+.mobile-imessage-layout-container .tc-sidebar-scrollable {
+  background: <<colour page-background>>;
+  z-index: 1;
+  border-left: 1px solid <<colour modal-border>>;
+}
 
 /** The input ChatArea
  * looks like evernote
@@ -22,6 +28,9 @@ type: text/vnd.tiddlywiki
 }
 .mobile-imessage-layout-input-area .tc-edit-texteditor.tc-edit-texteditor-body {
   width: 100%;
+}
+.mobile-imessage-layout-input-area .CodeMirror-activeline-background {
+  background: transparent;
 }
 
 /** Button to create tiddler */
@@ -186,5 +195,3 @@ p[class^="mobile-imessage-layout-from-"].emoji::before {
     margin: 0.5rem 0;
   }
 }
-
-</$importvariables>
