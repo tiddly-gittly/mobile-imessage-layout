@@ -10,10 +10,6 @@ type: text/vnd.tiddlywiki
   border-left: 1px solid <<colour modal-border>>;
 }
 
-/** The input ChatArea
- * looks like evernote
- */
-
 .mobile-imessage-layout-input-area {
   padding: 10px;
   margin: 0 10px;
@@ -22,95 +18,6 @@ type: text/vnd.tiddlywiki
   max-height: 30vh;
   overflow: auto;
   min-height: 4em;
-}
-.mobile-imessage-layout-input-area::-webkit-scrollbar {
-	width: 0 !important
-}
-.mobile-imessage-layout-input-area .tc-edit-texteditor.tc-edit-texteditor-body {
-  width: 100%;
-}
-.mobile-imessage-layout-input-area .CodeMirror-activeline-background {
-  background: transparent;
-}
-
-/** Button to create tiddler */
-
-.mobile-imessage-layout-button-area {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-
-  height: 3rem;
-  margin: 10px;
-}
-
-.mobile-imessage-layout-create-button {
-  height: 100%;
-  width: 10rem;
-}
-
-/** iMessage styles
- * copy from https://codepen.io/AllThingsSmitty/pen/jommGQ
- */
-
-.mobile-imessage-layout-imessage {
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 0 auto 1rem;
-  padding: 0.5rem 1.5rem;
-}
-.mobile-imessage-layout-imessage-length-limit-description {
-  opacity: 0.5;
-  height: 1em;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.mobile-imessage-layout-imessage p:nth-child(2) {
-  height: calc(100% - 3em);
-}
-.mobile-imessage-layout-imessage-chats {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-
-}
-.mobile-imessage-layout-imessage-chats p {
-  border-radius: 1.15rem;
-  line-height: 1.25;
-  padding: 0.5rem .875rem;
-  position: relative;
-  word-wrap: break-word;
-
-  margin-top: 2rem;
-}
-
-.mobile-imessage-layout-imessage-chats p::before,
-.mobile-imessage-layout-imessage-chats p::after {
-  bottom: -0.1rem;
-  content: "";
-  height: 1rem;
-  position: absolute;
-}
-
-p.mobile-imessage-layout-from-me {
-  align-self: flex-end;
-  background-color: #248bf5;
-  color: #fff; 
-}
-
-p.mobile-imessage-layout-from-me::before {
-  border-bottom-left-radius: 0.8rem 0.7rem;
-  border-right: 1rem solid #248bf5;
-  right: -0.35rem;
-  transform: translate(0, -0.1rem);
 }
 
 p.mobile-imessage-layout-from-me::after {
@@ -121,36 +28,6 @@ p.mobile-imessage-layout-from-me::after {
   width: 10px;
 }
 
-p[class^="from-"] {
-  margin: 0.5rem 0;
-  width: fit-content;
-}
-
-p.mobile-imessage-layout-from-me ~ p.mobile-imessage-layout-from-me {
-  margin: 0.25rem 0 0;
-}
-
-p.mobile-imessage-layout-from-me ~ p.mobile-imessage-layout-from-me:not(:last-child) {
-  margin: 0.25rem 0 0;
-}
-
-p.mobile-imessage-layout-from-me ~ p.mobile-imessage-layout-from-me:last-child {
-  margin-bottom: 0.5rem;
-}
-
-p.mobile-imessage-layout-from-them {
-  align-items: flex-start;
-  background-color: #e5e5ea;
-  color: #000;
-}
-
-p.mobile-imessage-layout-from-them:before {
-  border-bottom-right-radius: 0.8rem 0.7rem;
-  border-left: 1rem solid #e5e5ea;
-  left: -0.35rem;
-  transform: translate(0, -0.1rem);
-}
-
 p.mobile-imessage-layout-from-them::after {
   background-color: <<colour page-background>>;
   border-bottom-right-radius: 0.5rem;
@@ -159,30 +36,6 @@ p.mobile-imessage-layout-from-them::after {
   width: 10px;
 }
 
-p[class^="mobile-imessage-layout-from-"].emoji {
-  background: none;
-  font-size: 2.5rem;
-}
-
-p[class^="mobile-imessage-layout-from-"].emoji::before {
-  content: none;
-}
-
-.mobile-imessage-layout-no-tail::before {
-  display: none;
-}
-
-.mobile-imessage-layout-margin-b_none {
-  mobile-imessage-layout-margin-bottom: 0 !important;
-}
-
-.mobile-imessage-layout-margin-b_one {
-  margin-bottom: 1rem !important;
-}
-
-.mobile-imessage-layout-margin-t_one {
-  margin-top: 1rem !important;
-}
 
 @media screen and (max-width: <<sidebarbreakpoint>>) {
   .mobile-imessage-layout-imessage-chats {
