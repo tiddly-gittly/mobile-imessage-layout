@@ -4,6 +4,6 @@
   "description": "Simple chat style (or Twitter style) layout for mobile. Quickly input todo and thoughts in few seconds.",
   "core-version": ">=5.1.22",
   "plugin-type": "plugin",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "list": "readme config tree"
 }
