@@ -9,6 +9,11 @@ tags: $:/tags/Layout
 tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$ mobile-imessage-layout-container
 \end
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+\procedure redirected-navigate-actions()
+  <$action-setfield $tiddler="$:/layout" text="" $timestamp="no">
+  	<$action-navigate $to=<<event-navigateTo>> $scroll="yes" />
+	</$action-setfield>
+\end
 
 <$vars
 	tv-config-toolbar-icons={{$:/config/Toolbar/Icons}}
@@ -16,21 +21,24 @@ tc-page-container tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$ 
 	tv-config-toolbar-class={{$:/config/Toolbar/ButtonClass}}
 	tv-show-missing-links={{$:/config/MissingLinks}}
 	storyviewTitle={{$:/view}}
-	languageTitle={{{ [{$:/language}get[name]] }}}>
+	languageTitle={{{ [{$:/language}get[name]] }}}
+>
 	<div class=<<containerClasses>>>
 		<$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
-			{{$:/core/ui/CommandPaletteTemplate}}
-			<% if [{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}match[]] %>
-				<!-- show `$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageConfigBeforeUse` in the middle -->
-				<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageConfigBeforeUse]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
-					<$transclude tiddler=<<listItem>>/>
-				</$list>
-			<% else %>
-				<!-- show normal UI `$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory` -->
-				<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
-					<$transclude tiddler=<<listItem>>/>
-				</$list>
-			<% endif %>
+			<$messagecatcher $tm-navigate=<<redirected-navigate-actions>>>
+				{{$:/core/ui/CommandPaletteTemplate}}
+				<% if [{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}match[]] %>
+					<!-- show `$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageConfigBeforeUse` in the middle -->
+					<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageConfigBeforeUse]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
+						<$transclude tiddler=<<listItem>>/>
+					</$list>
+				<% else %>
+					<!-- show normal UI `$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory` -->
+					<$list filter="[[$:/core/ui/PageTemplate/topleftbar]] [[$:/core/ui/PageTemplate/toprightbar]] [[$:/core/ui/PageTemplate/sidebar]] [[$:/plugins/linonetwo/mobile-imessage-layout/PageLayout/iMessageStory]] [[$:/core/ui/PageTemplate/alerts]] [tag[$:/tags/PageTemplate]!has[draft.of]]" variable="listItem">
+						<$transclude tiddler=<<listItem>>/>
+					</$list>
+				<% endif %>
+			</$messagecatcher>
 		</$navigator>
 	</div>
 </$vars>
