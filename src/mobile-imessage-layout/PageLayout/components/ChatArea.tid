@@ -1,6 +1,9 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatArea
 
 \define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+\define clickactions()
+  <$action-navigate $to=<<currentTiddler>> />
+\end
 
 <div class="mobile-imessage-layout-imessage">
 
@@ -12,9 +15,11 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatAre
   <div class="mobile-imessage-layout-imessage-chats">
     <$list filter="[all[tiddlers]tag{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}has[modified]!sort[modified]limit[10]]">
       <p class="mobile-imessage-layout-from-them emoji">👍🏻</p>
-      <p class="mobile-imessage-layout-from-me">
-        <$transclude mode="block" />
-      </p>
+      <$eventcatcher selector="p.mobile-imessage-layout-from-me" $dblclick=<<clickactions>>>
+        <p class="mobile-imessage-layout-from-me">
+          <$transclude mode="block" />
+        </p>
+      </$eventcatcher>
     </$list>
   </div>
 
