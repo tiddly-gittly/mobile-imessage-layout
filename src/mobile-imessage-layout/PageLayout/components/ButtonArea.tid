@@ -14,7 +14,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonA
       $tiddler="$:/layout"
       text=""
     />
-    {{$:/core/images/default-layout}}
+    {{$:/core/images/standard-layout}}
   </$button>
 
   <$button class="mobile-imessage-layout-create-button">
