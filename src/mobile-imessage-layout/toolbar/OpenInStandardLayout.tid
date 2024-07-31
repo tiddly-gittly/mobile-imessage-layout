@@ -1,0 +1,26 @@
+title: $:/plugins/linonetwo/mobile-imessage-layout/toolbar/OpenInStandardLayout
+tags: $:/tags/ViewToolbar
+caption: {{$:/core/images/standard-layout}} <<lingo OpenInStandardLayout $:/plugins/linonetwo/mobile-imessage-layout/language/>>
+description: <<lingo OpenInStandardLayoutDescription $:/plugins/linonetwo/mobile-imessage-layout/language/>>
+
+\whitespace trim
+\define lingo-base() $:/plugins/linonetwo/mobile-imessage-layout/language/
+
+<$let targetTitle=<<currentTiddler>>>
+  <%if [{$:/layout}!is[blank]] %>
+    <$wikify name="OpenInStandardLayout" text="<<lingo OpenInStandardLayout>>" mode="inline">
+      <$button tooltip=<<OpenInStandardLayout>> aria-label=<<OpenInStandardLayout>> class=<<tv-config-toolbar-class>> >
+        <$action-navigate $to=<<targetTitle>> />
+
+        <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+          {{$:/core/images/standard-layout}}
+        </$list>
+        <$list filter="[<tv-config-toolbar-text>match[yes]]">
+          <span class="tc-btn-text">
+            <$text text=<<OpenInStandardLayout>>/>
+          </span>
+        </$list>
+      </$button>
+    </$wikify>
+  <%endif%>
+</$let>

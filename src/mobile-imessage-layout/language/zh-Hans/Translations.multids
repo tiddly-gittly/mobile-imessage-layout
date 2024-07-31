@@ -16,3 +16,5 @@ ConfigDescription.EnableCodeMirror.Description: 在输入框中使用 codemirror
 GoToiMessageLayoutButton/Hint: 进入「i信息」布局
 GoToiMessageLayoutButton/Description: 点击此按钮将进入「i信息」布局
 ChatArea/ContentLengthDescription: 仅展示最近的 10 条信息
+OpenInStandardLayout: 在标准布局打开条目
+OpenInStandardLayoutDescription: （仅在非标准布局显示）退出当前布局，切换到标准布局，在故事流内重新打开此条目
