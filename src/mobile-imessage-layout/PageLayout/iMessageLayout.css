@@ -56,91 +56,20 @@
   flex-direction: column-reverse;
   justify-content: flex-end;
 }
-.mobile-imessage-layout-imessage-chats p {
-  border-radius: 1.15rem;
-  line-height: 1.25;
-  padding: 0.5rem 0.875rem;
-  position: relative;
-  word-wrap: break-word;
-
-  margin-top: 2rem;
+.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame {
+  padding-top: 0;
+  padding-bottom: 0;
 }
-
-.mobile-imessage-layout-imessage-chats p::before,
-.mobile-imessage-layout-imessage-chats p::after {
-  bottom: -0.1rem;
-  content: '';
-  height: 1rem;
+.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > div:not(.tc-tiddler-body):not(.tc-tiddler-title) {
+  transform: scale(0.75);
+  transform-origin: left;
+}
+.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > .tc-tiddler-title {
   position: absolute;
+  right: 1em;
 }
-
-p.mobile-imessage-layout-from-me {
-  align-self: flex-end;
-  background-color: #248bf5;
-  color: #fff;
-}
-
-p.mobile-imessage-layout-from-me::before {
-  border-bottom-left-radius: 0.8rem 0.7rem;
-  border-right: 1rem solid #248bf5;
-  right: -0.35rem;
-  transform: translate(0, -0.1rem);
-}
-
-p[class^='from-'] {
-  margin: 0.5rem 0;
-  width: fit-content;
-}
-
-p.mobile-imessage-layout-from-me ~ p.mobile-imessage-layout-from-me {
-  margin: 0.25rem 0 0;
-}
-
-p.mobile-imessage-layout-from-me
-  ~ p.mobile-imessage-layout-from-me:not(:last-child) {
-  margin: 0.25rem 0 0;
-}
-
-p.mobile-imessage-layout-from-me ~ p.mobile-imessage-layout-from-me:last-child {
-  margin-bottom: 0.5rem;
-}
-
-p.mobile-imessage-layout-from-them {
-  align-items: flex-start;
-  background-color: #e5e5ea;
-  color: #000;
-}
-
-p.mobile-imessage-layout-from-them:before {
-  border-bottom-right-radius: 0.8rem 0.7rem;
-  border-left: 1rem solid #e5e5ea;
-  left: -0.35rem;
-  transform: translate(0, -0.1rem);
-}
-
-p[class^='mobile-imessage-layout-from-'].emoji {
-  background: none;
-  font-size: 2.5rem;
-}
-
-p[class^='mobile-imessage-layout-from-'].emoji::before {
-  content: none;
-}
-
-.mobile-imessage-layout-no-tail::before {
-  display: none;
-}
-
-.mobile-imessage-layout-margin-b_none {
-  margin-bottom: 0 !important;
-}
-
-.mobile-imessage-layout-margin-b_one {
-  margin-bottom: 1rem !important;
-}
-
-.mobile-imessage-layout-margin-t_one {
-  margin-top: 1rem !important;
+.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > .tc-tiddler-body {
+  font-size: 2em;
 }
 
 .mobile-imessage-layout-button-area {
