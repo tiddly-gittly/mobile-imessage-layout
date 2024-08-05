@@ -13,8 +13,9 @@ ConfigDescription.EnableWYSIWYG: Enable WYSIWYG editor if slate-write plugin is 
 ConfigDescription.EnableWYSIWYG.Description: Use WYSIWYG editor in the input box. This will override codemirror editor.
 ConfigDescription.EnableCodeMirror: Enable codemirror editor if codemirror plugin is installed
 ConfigDescription.EnableCodeMirror.Description: Use codemirror editor in the input box. This won't work if WYSIWYG editor is enabled.
+ConfigDescription.RecentMessageLimit: Recent Message Limit
 GoToiMessageLayoutButton/Hint: Go to iMessage Layout
 GoToiMessageLayoutButton/Description: Click on this button will go to iMessage Layout
-ChatArea/ContentLengthDescription: Only 10 recent messages will be shown.
+ChatArea/ContentLengthDescription: Only {{$:/plugins/linonetwo/mobile-imessage-layout/configs/RecentMessageLimit}} recent messages will be shown.
 OpenInStandardLayout: Opens the tiddler in the standard layout
 OpenInStandardLayoutDescription: (Only shows in non-standard layouts) Exits the current layout, switches to the standard layout, and reopens this tiddler within the story

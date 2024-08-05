@@ -20,3 +20,5 @@ caption: <<lingo Name $:/plugins/linonetwo/mobile-imessage-layout/language/>>
 :<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableWYSIWYG" field="text" checked="yes" unchecked="no"> <<lingo "ConfigDescription.EnableWYSIWYG.Description">></$checkbox>
 ;<<lingo "ConfigDescription.EnableCodeMirror">>:
 :<$checkbox tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/EnableCodeMirror" field="text" checked="yes" unchecked="no"> <<lingo "ConfigDescription.EnableCodeMirror.Description">></$checkbox>
+;<<lingo ConfigDescription.RecentMessageLimit>>
+:<$edit-text tiddler="$:/plugins/linonetwo/mobile-imessage-layout/configs/RecentMessageLimit" tabindex=-1 focus=false cancelPopups="yes" fileDrop=no tag="input" type="number" /> <<lingo ChatArea/ContentLengthDescription>>

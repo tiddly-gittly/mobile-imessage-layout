@@ -4,3 +4,4 @@ EnableWYSIWYG: no
 EnableCodeMirror: yes
 PageControlBelowPage: yes
 TagsForMessage: 
+RecentMessageLimit: 5
