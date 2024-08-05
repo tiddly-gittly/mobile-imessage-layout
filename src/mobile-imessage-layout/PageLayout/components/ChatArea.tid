@@ -13,7 +13,7 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ChatAre
   </div>
 
   <div class="mobile-imessage-layout-imessage-chats">
-    <$list filter="[all[tiddlers]tag{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}has[modified]sort[modified]limit[10]]">
+    <$list filter="[all[tiddlers]tag{$:/plugins/linonetwo/mobile-imessage-layout/configs/TagsForMessage}has[modified]!sort[modified]limit{$:/plugins/linonetwo/mobile-imessage-layout/configs/RecentMessageLimit}reverse[]]">
       {{||$:/core/ui/StoryTiddlerTemplate}}
     </$list>
   </div>
