@@ -1,13 +1,5 @@
 title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonArea
 
-\define cleanUpAction()
-<$action-setfield
-  $tiddler="$:/state/mobile-imessage-layout/new"
-  text=""
-  tags=""
-/>
-\end
-
 <div class="mobile-imessage-layout-button-area">
   <$button class="mobile-imessage-layout-create-button">
     <$action-setfield
@@ -26,7 +18,11 @@ title: $:/plugins/linonetwo/mobile-imessage-layout/PageLayout/components/ButtonA
       type="text/vnd.tiddlywiki"
       _is_titleless="yes"
     >
-      <<cleanUpAction>>
+      <$action-setfield
+        $tiddler="$:/state/mobile-imessage-layout/new"
+        text=""
+        tags=""
+      />
     </$action-createtiddler>
     {{$:/plugins/linonetwo/mobile-imessage-layout/UI/SendMessageImage}}
   </$button>
