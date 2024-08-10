@@ -6,6 +6,7 @@ list: readme license history
 name: Toc
 plugin-type: plugin
 source: https://github.com/kookma/TOC
+stability: STABILITY_2_STABLE
 title: $:/plugins/kookma/toc
 type: application/json
-version: 1.6.1
+version: 1.6.2
