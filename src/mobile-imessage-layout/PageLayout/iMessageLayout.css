@@ -56,18 +56,21 @@
   flex-direction: column-reverse;
   justify-content: flex-end;
 }
-.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame {
+.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame:not(.tc-tiddler-edit-frame) {
   padding-top: 0;
   padding-bottom: 0;
 }
-.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > div:not(.tc-tiddler-body):not(.tc-tiddler-title) {
+.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame:not(.tc-tiddler-edit-frame) > div:not(.tc-tiddler-body):not(.tc-tiddler-title) {
   transform: scale(0.75);
   transform-origin: left;
 }
-.mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > .tc-tiddler-title {
-  position: absolute;
-  right: 1em;
+@media (min-width: <<sidebarbreakpoint>>) {
+  .mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > .tc-tiddler-title {
+    position: absolute;
+    right: 1em;
+  }
 }
+
 .mobile-imessage-layout-imessage-chats > div.tc-tiddler-frame > .tc-tiddler-body {
   font-size: 2em;
   line-height: 1em;
