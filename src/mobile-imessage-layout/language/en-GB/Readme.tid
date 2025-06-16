@@ -21,4 +21,4 @@ Quickly input todo and thoughts in few seconds.
 #* You can use TiddlyWiki syntax in textboxes, such as links, images, lists, etc.
 # Close the layout and switch back to the default story flow layout
 #* Use the layout switcher button {{$:/core/ui/Buttons/layout}} on the PageControl to switch the layout
-#* Use the button with default layout icon {{$:/core/images/default-layout}} , on the bottom left of the page (above input box), to go back to default layout.
+#* Use the button with default layout icon {{$:/core/images/standard-layout}} , on the bottom left of the page (above input box), to go back to default layout.
